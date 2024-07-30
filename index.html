@@ -1,0 +1,62 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="myJavascript.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AF Rummy</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body style="overflow-x: hidden;">
+<div class="warp">
+
+        <img src="./imgs/icon.png" class="logo-img" alt="logo" >
+
+        <div class="btnbox">
+            <a>
+                <img id="installbtn"  src="./imgs/btn_down1.png" alt="download">
+            </a>
+        </div>
+  
+
+        <div class="banner banner1">
+                <img src="./imgs/btn_down2.png" id="downloadbtn" >
+         </div>
+
+ 
+	<a href=""><img src="./imgs/btn_advisory.png" class="button2 "></a>
+    <a href=""><img src="./imgs/ws.png" class="button3"></a>
+    <a href=""><img src="./imgs/tg.png" class="button4"></a>
+    <a href="" onclick="event.preventDefault(); showPopup();"><img src="./imgs/disclaimer.png" class="button5"></a>
+</div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Disclaimer</h2>
+            <p>This game involves an element of financial risk and can be addictive. Please play responsibly. Sharechat & Moj are not responsible for any claims and guarantees. This is for 18+.</p>
+            <button class="close-button" onclick="closePopup()">Okay!</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the pop-up
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+
+<script type="text/javascript">
+    //readyAdjust(code,campaign);
+</script>
+
+</html>

@@ -1,0 +1,681 @@
+a {
+  text-decoration: none;
+}
+html {
+  min-height: 100vh;
+  background-size: cover;
+  max-width: 990px;
+  margin: 0 auto;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 30.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 932px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+/* Additional media queries for larger screens */
+
+@media screen and (min-width: 1170px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+
+html,
+body {
+  height: 142%;
+  min-height: 35.28rem;
+  /* max-height: 30.28rem; */
+}
+
+body {
+  min-width: auto;
+  width: auto;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background: #fff;
+}
+
+.warp {
+  background: url("../imgs/bg.png") no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 201%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0px);
+  }
+  100% {
+      transform: translateY(10px); /* Adjust the distance to move up and down */
+  }
+  
+}
+
+
+
+.logo-img{
+  animation: moveUpDown 1.5s infinite alternate;
+  position: absolute;
+  top: 0;
+  left: 24;
+  width: 7rem;
+  height: 5rem;
+  z-index: 0;
+}
+
+
+.banner1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center; /* Ensure content is centered */
+}
+
+.banner1 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ensure image scales down with viewport */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.dowmload-button {
+  position: absolute;
+  top: 20.5rem;
+  left: 50%;
+  margin-left: -3.96rem;
+  width: 7.92rem;
+  height: 3rem;
+  animation: myBreath 1s linear infinite;
+}
+
+.btnbox {
+  position: relative;
+  top: -28.8rem;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: myBreath 1s linear infinite;
+}
+
+.btnbox a img {
+  width: 3.92rem;
+  height: 2rem;
+  display: block;
+}
+
+
+.button2 {
+  position: absolute;
+  top: 2rem;
+  margin-left: 4.26rem;
+  width: 1rem;
+  height: 1rem;
+  animation: myBreath 1s linear infinite;
+}
+
+.button2
+{
+    width:55px;
+    height:57px;
+    line-height:36px;
+    float:right;
+    cursor:pointer;
+    position:fixed;
+    bottom:0;
+    right:2px;
+}
+
+.button3 {
+  position: absolute;
+  top: 4.9rem;
+  margin-left: 4.26rem;
+  width: 1rem;
+  height: 1rem;
+  animation: myBreath 1s linear infinite;
+}
+
+.button3
+{
+    width:50px;
+    height:50px;
+    line-height:36px;
+    float:right;
+    cursor:pointer;
+    position:fixed;
+    bottom:0;
+    right:2px;
+}
+
+.button4 {
+  position: absolute;
+  top: 7.6rem;
+  margin-left: 4.26rem;
+  width: 1rem;
+  height: 1rem;
+  animation: myBreath 1s linear infinite;
+}
+
+.button4
+{
+    width:50px;
+    height:50px;
+    line-height:36px;
+    float:right;
+    cursor:pointer;
+    position:fixed;
+    bottom:0;
+    right:2px;
+}
+
+.button5 {
+  position: absolute;
+  top: 9rem;
+  margin-left: 4.26rem;
+  width: 1rem;
+  height: 1rem;
+  animation: myBreath 1s linear infinite;
+}
+
+.button5
+{
+    width:220px;
+    height:125px;
+    line-height:36px;
+    float:right;
+    cursor:pointer;
+    position:fixed;
+    bottom:0;
+    right:-82px;
+}
+
+ /* Style for the pop-up container */
+ .popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+/* Style for the pop-up content */
+.popup-content {
+  font-size: 12px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Style for the close button */
+.close-button {
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #00cfff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 300px;
+}
+
+
+@media screen and (max-height: 740px) and (min-width: 360px) {
+  html,
+body {
+  height: 100%;
+  min-height: 30.28rem;
+  /* max-height: 30.28rem; */
+}
+  .warp {
+    background-size: cover;
+    height: 310%;
+  }
+
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    margin-top: -3.5rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+  .button2 img{
+    margin-right: 9rem;
+    width: 55px;
+    height:57px;
+
+  }
+
+  
+}
+
+@media screen and (max-height: 667px) and (min-width: 375px) {
+  html,
+body {
+  height: 100%;
+  min-height: 30.28rem;
+  /* max-height: 30.28rem; */
+}
+  .warp {
+    background-size: cover;
+    height: 311%;
+  }
+
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    margin-top: -3rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+  .button2 img{
+    margin-right: 9rem;
+    width: 55px;
+    height:57px;
+
+  }
+}
+
+@media screen and (max-height: 731px) and (min-width: 411px) {
+  html,
+body {
+  height: 100%;
+  min-height: 30.28rem;
+  /* max-height: 30.28rem; */
+}
+  .warp {
+    background-size: cover;
+    height: 311%;
+  }
+
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    padding-top: 7.5rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+  .button2 img{
+    margin-right: 9rem;
+    width: 55px;
+    height:57px;
+
+  }
+}
+
+
+@media screen and (max-height: 838px) and (min-width: 412px) {
+  html,
+body {
+  height: 100%;
+  min-height: 30.28rem;
+  /* max-height: 30.28rem; */
+}
+  .warp {
+    background-size: cover;
+    height: 311%;
+  }
+
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    padding-top: 7rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+  .button2 img{
+    margin-right: 9rem;
+    width: 55px;
+    height:57px;
+
+  }
+}
+
+
+
+@media screen and (max-height: 896px) and (min-width: 414px) {
+  html,
+body {
+  height: 100%;
+  min-height: 30.28rem;
+  /* max-height: 30.28rem; */
+}
+  .warp {
+    background-size: cover;
+    height: 311%;
+  }
+
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    padding-top: 6rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+  .button2 img{
+    margin-right: 9rem;
+    width: 55px;
+    height:57px;
+
+  }
+}
+
+
+@media screen and (max-height: 844px) and (min-width: 390px) {
+  html,
+body {
+  height: 100%;
+  min-height: 30.28rem;
+  /* max-height: 30.28rem; */
+}
+  .warp {
+    background-size: cover;
+    height: 290%;
+  }
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    margin-top: -3.2rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+ 
+}
+
+@media screen and (max-height: 780px) and (min-width: 390px) {
+  html,
+body {
+  height: 100%;
+  min-height: 30.28rem;
+  /* max-height: 30.28rem; */
+}
+  .warp {
+    background-size: cover;
+    height: 290%;
+  }
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    margin-top: 4rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+ 
+}
+
+
+@media screen and (max-height: 915px) and (min-width: 412px) {
+  html,
+  body {
+    height: 100%;
+    min-height: 30.28rem;
+    /* max-height: 30.28rem; */
+  }
+  .warp {
+    background-size: cover;
+    height: 283%;
+  }
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    margin-top: -3.7rem; /* Adjust top position for medium screens */
+
+  }
+
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+ 
+
+}
+
+@media screen and (max-height: 932px) and (min-width: 430px) {
+  html,
+body {
+  height: 100%;
+  min-height: 22.85rem;
+  /* max-height: 30.28rem; */
+}
+
+.warp {
+  background-size: cover;
+  height: 289.6%;
+}
+.logo-img {
+  width: 13rem;
+  height: 9rem;
+  z-index: 0;
+}
+
+.btnbox img{
+  margin-top: -3.2rem; /* Adjust top position for medium screens */
+
+}
+
+.btnbox a img {
+  width: 7rem; /* Adjust width for medium screens */
+  height: 3rem; /* Adjust height for medium screens */
+}
+ 
+}
+@media screen and (min-width: 1170px) {
+  html,
+  body {
+    height: 100%;
+    min-height: 22.85rem;
+    /* max-height: 30.28rem; */
+  }
+  
+  .warp {
+    background-size: cover;
+    height: 545.6%;
+  }
+  .logo-img {
+    width: 13rem;
+    height: 9rem;
+    z-index: 0;
+  }
+  
+  .btnbox img{
+    margin-top: -12.7rem; /* Adjust top position for medium screens */
+  
+  }
+  
+  .btnbox a img {
+    width: 7rem; /* Adjust width for medium screens */
+    height: 3rem; /* Adjust height for medium screens */
+  }
+
+  .button2 {
+    margin-right: 9.2rem;
+    width: 80px;
+    height:70px;
+
+  }
+  .button3 {
+    margin-right: 9.2rem;
+    width: 80px;
+    height:70px;
+    margin-top: 19;
+  }
+  .button4 {
+    margin-right: 9.2rem;
+    width: 80px;
+    height:70px;
+    margin-top: 20;
+  }
+  .button5 {
+    margin-right: 8.5rem;
+    width: 320px;
+    height:200px;
+    margin-top: 20;
+  }
+}
+
+
+
+
+@keyframes myBreath {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.logo,
+.small-logo {
+  border-radius: 25px;
+}
+
+
+
+
